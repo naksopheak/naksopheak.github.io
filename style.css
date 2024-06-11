@@ -14,8 +14,8 @@
 }
 
 body {
-  background-color: hsl(0deg 0% 100%);
-  color: color: hsl(0deg 0% 0%);;
+  background-color: hsl(0deg 0% 0%);
+  color: color: hsl(0deg 0% 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
