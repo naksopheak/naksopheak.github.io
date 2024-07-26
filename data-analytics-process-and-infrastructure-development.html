@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brief description of the website for search engines">
+    
+    <!-- Website Title -->
+    <title>Nak Sopheak | Data Analytics Process & Infrastructure</title>
+    <!-- Website Title end -->
+    
+    <!-- FavIcon -->
+    <link rel="icon" href="img/white-logo.png" type="image/png" sizes="16x16">
+    <!-- FavIcon end -->
+    
+    <!-- SEO -->
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="keywords, related, to, your, website">
+    <meta name="author" content="Nak Sopheak">
+    <meta property="og:title" content="Nak Sopheak | Data Scientist">
+    <meta property="og:description" content="Recognizing inherent biases is the first step; our true challenge lies in seeing beyond them">
+    <meta property="og:image" content="img/me-22.png">
+    <meta property="og:url" content="https://www.naksopheak.com">
+    <!-- SEO end -->
+
+    <!-- Google Fonts - Open Sans -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <!-- Google Fonts - Open Sans end -->
+    
+    <!-- icons link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- icons link end -->
+
+    <!-- carousel cdn links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <!-- carousel cdn links end -->
+
+    <!-- animation link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- animation link end -->
+    
+    <!-- CSS style -->
+    <style>
+        /* font family import */
+        @import url('https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700;800&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: 'Changa', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* header css start */
+        header {
+		width: 100%;
+		height: 80px;
+		padding: 20px 70px;
+		background: linear-gradient(0deg, rgba(85,85,85,1) 0%, rgba(51,51,51,1) 100%); /* Update gradient colors */
+		background-size: cover;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		z-index: 999;
+		position: relative; /* Change this from fixed to relative */
+		top: 0;
+		left: 0;
+        }
+        header .logo h2 {
+            font-size: 1.7em;
+            color: #fff;
+        }
+        header .navs ul {
+            display: flex;
+        }
+        header .navs ul li {
+            margin: 0px 15px;
+        }
+        header .navs ul li .active {
+            color: #81d742;
+        }
+        header .navs ul li .responsive-active {
+            display: none;
+        }
+        header .navs ul li a {
+            color: #fff;
+            font-size: 17px;
+            font-weight: 600;
+            transition-duration: 0.4s;
+            letter-spacing: 1.5px;
+        }
+        header .navs ul li a:hover {
+            color: gray;
+        }
+        /* header css end */
+		
+		/* hero section */
+		.content {
+            box-sizing: border-box;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        main {
+            text-align: center;
+            max-width: 950px; /* Set maximum width to 900px */
+            margin: 0 auto; /* Center the main section horizontally */
+            padding: 10px 10px; /* Add padding of 10px to left and right sides */
+        }
+		
+		main p {
+            font-family: 'Open Sans', sans-serif; /* Apply Open Sans font to p tag */
+            color: #140040; /* Font color for p tag */
+        }
+
+        h2 {
+            font-size: 25px; /* Default font size for mobile view */
+            text-align: center; /* Center the h2 text */
+        }
+
+        h3 {
+            font-size: 32px; /* Default font size for mobile view */
+            text-align: center; /* Center the h2 text */
+        }
+
+        .button {
+            width: 590px;
+            height: 327.77px;
+            margin-bottom: 0px; /* Add bottom margin of 100px */
+            font-size: 18px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9); /* Add drop shadow */
+        }
+		
+		.button {
+            display: inline-block;
+            background-color: #e02f1f;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 28px;
+            line-height: 24px;
+            font-weight: bold;
+            width: 100%; /* Button width to fill the container */
+            max-width: 623.2px; /* Set maximum width to 623.2px */
+            height: 74.4px; /* Set height to 74.4px */
+            padding: 0px 0px; /* Set padding for desktop view */
+            margin-top: 25px; /* Add bottom margin of 100px */
+            margin-bottom: 25px; /* Add bottom margin of 100px */
+
+        }
+		.content {
+        box-sizing: border-box;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        z-index: 1;
+    }
+		
+		.article {
+        text-align: center;
+        max-width: 900px; /* Set maximum width to 900px */
+        margin: 0 auto; /* Center the main section horizontally */
+    }
+		.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Default styles for card */
+.card {
+    width: 25%; /* Set width to 25% for desktop view */
+    padding: 0 15px; /* Add some spacing between cards */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    float: left; /* Float the cards left */
+    margin-bottom: 30px; /* Add margin at the bottom of each card */
+}
+
+/* Optional: adjust card styling for better layout */
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+        form input {
+            padding: 10px;
+            border-radius: 4px;
+            width: 80% !important;
+            border: 0.5px solid #888;
+            outline: none;
+            margin: 10px 0px;
+            caret-color: var(--blue);
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        form button {
+            margin: 10px 0px;
+            background-color: #15277af3;
+            color: var(--white);
+            padding: 15px 0px;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            width: 50%;
+            text-align: center;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+        }
+		 
+        .img {
+            max-width: 50%; /* Set max-width to 50% for desktop */
+            width: 590px;
+            height: 327.77px;
+            margin-bottom: 0px; /* Add bottom margin of 100px */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9); /* Add drop shadow */
+        }
+		
+
+		
+		
+		         .carousel-container {
+            position: relative;
+            width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+					 align-content: center;
+        }
+
+.carousel {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    animation: scroll 150s linear infinite; /* Ensure the animation property is correctly applied */
+}
+
+        .carousel img {
+            width: 100px;
+            height: 100px;
+            margin: 0 10px;
+            transition: transform 0.5s ease;
+            cursor: pointer;
+        }
+
+        .carousel img:hover {
+            transform: scale(1.1);
+        }
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            cursor: pointer;
+        }
+
+        .overlay .close {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
+
+        .overlay .overlay-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+		
+		
+		footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            bottom: 0;
+            width: 100%;
+            box-sizing: border-box;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .footerinfo {
+            text-align: center;
+            max-width: 900px; /* Set maximum width to 900px */
+            margin: 0 auto; /* Center the main section horizontally */
+
+        }
+
+        html, body {
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+		/* Hero section end */
+		
+		
+		.content-article {
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: white;
+        flex: 1;
+        padding: 20px 20px;
+        box-sizing: border-box;
+        margin-top: 0px; /* Add margin to separate sections */
+    }
+        
+        /* Responsive Css Start */
+        @media screen and (max-width:1280px) {}
+
+        @media screen and (max-width:1024px) {
+            header {
+                padding: 10px 30px;
+            }
+            header .navs ul li {
+                margin: 0px 10px;
+            }
+        }
+
+        @media screen and (max-width:991px) {
+            header {
+                padding: 10px 20px;
+            }
+            header .logo h2 {
+                font-size: 1.6em;
+            }
+            header .navs ul li {
+                margin: 0px 10px;
+            }
+            header .navs ul li a {
+                font-size: 16px;
+            }    
+        }
+		
+		@media screen and (min-width: 768px) {
+        /* CSS for desktop view */
+        .content-article {
+            flex-direction: row; /* Arrange sections side by side */
+        	}
+		}
+
+        @media screen and (max-width:768px) {
+            header {
+                padding: 0px 10px;
+            }
+            header .logo h2 {
+                font-size: 1.3em;
+            }
+            header .navs ul li {
+                margin: 0px 5px;
+            }
+            header .navs ul li a {
+                font-size: 15px;
+                font-weight: 500;
+            }
+			.hero-section {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.hero-section > div {
+				flex: unset;
+				padding: 10px;
+				width: 100%;
+			}
+			.hero-section img {
+				max-width: 100%;
+			}
+			.hero-reverse {
+				flex-direction: column;
+				align-items: center;
+    		}
+    		.hero-reverse > div:first-child {
+				order: 2;
+			}
+    		.hero-reverse > div:last-child {
+				order: 1;
+			}
+			.card {
+        width: 100%; /* Set width to 100% for mobile view */
+        float: none; /* Remove float for mobile view */
+    		}
+        }
+
+        @media screen and (max-width:576px) {
+            header {
+                flex-direction: column;
+                padding: 0;
+            }
+            header .logo h2 {
+                font-size: 1.6em;
+            }
+            header .logo {
+                padding: 10px 0px;
+            }
+            header .navs {
+                width: 100%;
+                background-color: #333;
+                display: flex;
+                justify-content: center;
+                padding: 5px 0px;
+            }
+            header .navs ul li .main-active {
+                display: none;
+            }
+            header .navs ul li .responsive-active {
+                display: initial;
+            }
+            header .navs ul li a {
+                font-weight: 700;
+            }
+        }
+
+        @media screen and (max-width:425px) {
+            .term .term_content {
+                width: 100% !important;
+            }
+            .privacy .privacy_content {
+                width: 100% !important;
+            }
+        }
+		
+		
+        /* Responsive Css End */
+    </style>
+</head>
+<body>
+    <!-- header section start -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><h2><span><i class="" aria-hidden="true"></i></span> Nak Sopheak</h2></a>
+        </div>
+        <div class="navs">
+            <ul>
+                <li><a href="background.html" class="main-active">Background</a></li>
+                <li><a href="about-me.html">About</a></li>
+                <li><a href="skillset.html">Skillset</a></li>
+                <li><a href="projects-portfolio.html">Projects</a></li>
+                <li><a href="mailto:me@naksopheak.com?subject=Let's%20get%20connected!" class="main-active">Get In Touch</a></li>
+                <li><a href="mailto:me@naksopheak.com?subject=Let's%20get%20connected!" class="responsive-active">Get In Touch</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- header section end -->
+	
+<!-- Hero Section -->
+
+<!-- Hero Section end-->
+
+	        <div class="article">
+       <div class="content-article">
+            <div>
+				
+                <h1 style="text-align: center; margin-top: 25px;">
+                    <span style="color: rgb(0, 0, 0); font-size: 30px;">
+                        Data Analytics Process and Infrastructure Development
+                    </span>
+                </h1>
+				
+				<div>			
+					<div>
+						<p style="line-height: 1; display: inline-block;">
+							<strong></strong><em><em class="date-container"><div id="date"></div></em></em>
+						</p>
+					</div>
+					
+					<p style="text-align: left; padding: 5px 0px">
+                    <span style="color: rgb(0, 0, 0); font-size: 30px;">
+                        Humana Military
+                    </span>
+                </p>
+
+    				<h2 style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        			<strong>Description: </strong>
+    				</h2><p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        			Spearheaded the development of a robust data analytics process and infrastructure to track user behavior and engagement across digital marketing communications and mediums. 
+    				</p>
+					
+					<h2 style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        			<strong>Role: </strong>
+    				</h2><p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        			Led the project from inception to implementation, working closely with cross-functional teams and stakeholders.
+    				</p>
+					
+					<h2 style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        			<strong>Tools and Technologies: </strong>
+    				</h2><p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        			Utilized a range of tools and technologies, including Microsoft Power BI for data visualization and analysis, as well as data analytics software like Adobe Analytics for tracking user behavior and engagement across digital marketing communications and mediums. I also collaborated with cross-functional teams using collaboration platforms like Microsoft Teams and Figma for effective team communication and project management.
+    				</p>
+					
+					<h2 style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        			<strong>Impact: </strong>
+    				</h2><p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        			Successfully created a proposal for capturing behavior in digital marketing, which was approved by the data governance council within Humana Military. Collaborated with the cybersecurity team to implement necessary software and tools. Worked closely with stakeholders to improve results, collaborating with graphic design, copywriting, UI/UX, data analytics, and IT teams to ensure seamless integration and implementation.
+    				</p>
+					
+				</div>
+				
+				<div class="carousel-container">
+					<h2 style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        			<strong>Sample: </strong>
+    				</h2>
+					
+    <div class="carousel">
+        <img src="img/em-dashboard.png" alt="Image 1">
+        <img src="img/em-dashboard-1.png" alt="Image 2">
+        <img src="img/em-dashboard-2.png" alt="Image 3">
+        <img src="img/aa-dashboard.png" alt="Image 4">
+		<img src="img/em-dashboard.png" alt="Image 1">
+        <img src="img/em-dashboard-1.png" alt="Image 2">
+        <img src="img/em-dashboard-2.png" alt="Image 3">
+        <img src="img/aa-dashboard.png" alt="Image 4">
+    </div>
+</div>
+<div id="overlay" class="overlay">
+    <span class="close">&times;</span>
+    <img class="overlay-content" id="overlay-image">
+</div>
+
+<!-- Your existing article code here -->
+
+
+				
+
+		
+				<div>
+    				<p style="text-align: left; line-height: 1.5; padding: 10px 0px">
+        			The development of the data analytics process and infrastructure was a collaborative effort that resulted in significant improvements in tracking user behavior and engagement across digital marketing channels. By leveraging tools like Microsoft Power BI and Adobe Analytics, we were able to gather valuable insights that informed our marketing strategies and drove results. The project's success was a testament to the power of teamwork and effective communication, as we worked closely with cross-functional teams to ensure seamless integration and implementation. This project not only enhanced our ability to capture behavior in digital marketing but also paved the way for future data-driven initiatives that will continue to drive the brand's success.
+    				</p>
+				</div>
+									
+            </div>
+            
+        </div>
+		
+		
+    </div>
+	
+<!-- Get in touch -->
+	
+	<div style="padding: 20px; text-align: center;">
+        <h1>Interested In Learning More?</h1>
+        <p style="padding: 20px; text-align: center;">Reach out and let's connect!</p>
+    </div>
+	
+	<main>
+	
+		<button class="button" style="font-weight:bold; margin-bottom: 100px; " type="submit" id="submitButton" onclick="location.href='mailto:me@naksopheak.com?subject=Let\'s%20get%20connected!'" data-aos="zoom-in" data-aos-duration="1000">Lets Get Connected ! <i class="fas fa-caret-right"></i></button>
+
+		</main>
+	
+<!-- Get in touch end -->
+	
+	
+	<footer>
+		<div class="logo">
+            <a href="index.html" style="color: white;"><h2><span><i class="" aria-hidden="true"></i></span> Nak Sopheak</h2></a>
+        </div>
+		<div class="footerinfo">
+        <!-- Footer content -->
+        <p>&copy; 2024 Nak Sopheak. All rights reserved.</p>
+		<p style="padding: 10px 25px;">
+			<a href="index.html" style="text-decoration: none; color: inherit;">Me</a> | 
+			<a href="privacy.html" style="text-decoration: none; color: inherit;">Privacy Policy</a> | 
+			<a href="terms.html" style="text-decoration: none; color: inherit;">Terms &amp; Conditions</a> | 
+			<a href="disclaimer.html" style="text-decoration: none; color: inherit;">Disclaimer</a> | 
+			<a href="mailto:me@naksopheak.com?subject=Let's%20get%20connected!" style="text-decoration: none; color: inherit;">Let's Get Connected</a>
+		</p>
+
+		</div>
+	</footer>
+	
+	<!-- animation js link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>AOS.init();</script>
+	<!-- animation js link end -->
+	
+	<!-- carousel js link -->
+	<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var images = document.querySelectorAll('.carousel img');
+    var overlay = document.getElementById('overlay');
+    var overlayImage = document.getElementById('overlay-image');
+    var closeBtn = document.querySelector('.overlay .close');
+
+    images.forEach(function(image) {
+        image.addEventListener('click', function() {
+            overlay.style.display = 'block';
+            overlayImage.src = this.src;
+        });
+    });
+
+    closeBtn.addEventListener('click', function() {
+        overlay.style.display = 'none';
+    });
+
+    overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) {
+            overlay.style.display = 'none';
+        }
+    });
+
+
+});
+
+
+	</script>
+	<!-- carousel js link end -->
+
+
+	
+	
+	
+</body>
+</html>

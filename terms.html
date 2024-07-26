@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brief description of the website for search engines">
+    
+    <!-- Website Title -->
+    <title>Nak Sopheak | Data Scientist</title>
+    <!-- Website Title end -->
+    
+    <!-- FavIcon -->
+    <link rel="icon" href="img/white-logo.png" type="image/png" sizes="16x16">
+    <!-- FavIcon end -->
+    
+    <!-- SEO -->
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="keywords, related, to, your, website">
+    <meta name="author" content="Nak Sopheak">
+    <meta property="og:title" content="Nak Sopheak | Data Scientist">
+    <meta property="og:description" content="Recognizing inherent biases is the first step; our true challenge lies in seeing beyond them">
+    <meta property="og:image" content="img/me-22.png">
+    <meta property="og:url" content="https://www.naksopheak.com">
+    <!-- SEO end -->
+
+    <!-- Google Fonts - Open Sans -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <!-- Google Fonts - Open Sans end -->
+    
+    <!-- icons link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- icons link end -->
+
+    <!-- carousel cdn links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <!-- carousel cdn links end -->
+
+    <!-- animation link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- animation link end -->
+    
+    <!-- CSS style -->
+    <style>
+        /* font family import */
+        @import url('https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700;800&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: 'Changa', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* header css start */
+        header {
+		width: 100%;
+		height: 80px;
+		padding: 20px 70px;
+		background: linear-gradient(0deg, rgba(85,85,85,1) 0%, rgba(51,51,51,1) 100%); /* Update gradient colors */
+		background-size: cover;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		z-index: 999;
+		position: relative; /* Change this from fixed to relative */
+		top: 0;
+		left: 0;
+        }
+        header .logo h2 {
+            font-size: 1.7em;
+            color: #fff;
+        }
+        header .navs ul {
+            display: flex;
+        }
+        header .navs ul li {
+            margin: 0px 15px;
+        }
+        header .navs ul li .active {
+            color: #81d742;
+        }
+        header .navs ul li .responsive-active {
+            display: none;
+        }
+        header .navs ul li a {
+            color: #fff;
+            font-size: 17px;
+            font-weight: 600;
+            transition-duration: 0.4s;
+            letter-spacing: 1.5px;
+        }
+        header .navs ul li a:hover {
+            color: gray;
+        }
+        /* header css end */
+		
+		/* hero section */
+		.content {
+            box-sizing: border-box;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        main {
+            text-align: center;
+            max-width: 950px; /* Set maximum width to 900px */
+            margin: 0 auto; /* Center the main section horizontally */
+            padding: 10px 10px; /* Add padding of 10px to left and right sides */
+        }
+		
+		main p {
+            font-family: 'Open Sans', sans-serif; /* Apply Open Sans font to p tag */
+            color: #140040; /* Font color for p tag */
+        }
+
+        h2 {
+            font-size: 25px; /* Default font size for mobile view */
+            text-align: center; /* Center the h2 text */
+        }
+
+        h3 {
+            font-size: 32px; /* Default font size for mobile view */
+            text-align: center; /* Center the h2 text */
+        }
+
+        .button {
+            width: 590px;
+            height: 327.77px;
+            margin-bottom: 0px; /* Add bottom margin of 100px */
+            font-size: 18px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9); /* Add drop shadow */
+        }
+		
+		.button {
+            display: inline-block;
+            background-color: #e02f1f;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 28px;
+            line-height: 24px;
+            font-weight: bold;
+            width: 100%; /* Button width to fill the container */
+            max-width: 623.2px; /* Set maximum width to 623.2px */
+            height: 74.4px; /* Set height to 74.4px */
+            padding: 0px 0px; /* Set padding for desktop view */
+            margin-top: 25px; /* Add bottom margin of 100px */
+            margin-bottom: 25px; /* Add bottom margin of 100px */
+
+        }
+		.content {
+        box-sizing: border-box;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        z-index: 1;
+    }
+		
+		.article {
+        text-align: center;
+        max-width: 900px; /* Set maximum width to 900px */
+        margin: 0 auto; /* Center the main section horizontally */
+    }
+		.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Default styles for card */
+.card {
+    width: 25%; /* Set width to 25% for desktop view */
+    padding: 0 15px; /* Add some spacing between cards */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    float: left; /* Float the cards left */
+    margin-bottom: 30px; /* Add margin at the bottom of each card */
+}
+
+/* Optional: adjust card styling for better layout */
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+        form input {
+            padding: 10px;
+            border-radius: 4px;
+            width: 80% !important;
+            border: 0.5px solid #888;
+            outline: none;
+            margin: 10px 0px;
+            caret-color: var(--blue);
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        form button {
+            margin: 10px 0px;
+            background-color: #15277af3;
+            color: var(--white);
+            padding: 15px 0px;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            width: 50%;
+            text-align: center;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+        }
+		 
+        .img {
+            max-width: 50%; /* Set max-width to 50% for desktop */
+            width: 590px;
+            height: 327.77px;
+            margin-bottom: 0px; /* Add bottom margin of 100px */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9); /* Add drop shadow */
+        }
+		
+		footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            bottom: 0;
+            width: 100%;
+            box-sizing: border-box;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .footerinfo {
+            text-align: center;
+            max-width: 900px; /* Set maximum width to 900px */
+            margin: 0 auto; /* Center the main section horizontally */
+
+        }
+
+        html, body {
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+		/* Hero section end */
+		
+		
+		.content-article {
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: white;
+        flex: 1;
+        padding: 20px 20px;
+        box-sizing: border-box;
+        margin-top: 0px; /* Add margin to separate sections */
+    }
+        
+        /* Responsive Css Start */
+        @media screen and (max-width:1280px) {}
+
+        @media screen and (max-width:1024px) {
+            header {
+                padding: 10px 30px;
+            }
+            header .navs ul li {
+                margin: 0px 10px;
+            }
+        }
+
+        @media screen and (max-width:991px) {
+            header {
+                padding: 10px 20px;
+            }
+            header .logo h2 {
+                font-size: 1.6em;
+            }
+            header .navs ul li {
+                margin: 0px 10px;
+            }
+            header .navs ul li a {
+                font-size: 16px;
+            }    
+        }
+		
+		@media screen and (min-width: 768px) {
+        /* CSS for desktop view */
+        .content-article {
+            flex-direction: row; /* Arrange sections side by side */
+        	}
+		}
+
+        @media screen and (max-width:768px) {
+            header {
+                padding: 0px 10px;
+            }
+            header .logo h2 {
+                font-size: 1.3em;
+            }
+            header .navs ul li {
+                margin: 0px 5px;
+            }
+            header .navs ul li a {
+                font-size: 15px;
+                font-weight: 500;
+            }
+			.hero-section {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.hero-section > div {
+				flex: unset;
+				padding: 10px;
+				width: 100%;
+			}
+			.hero-section img {
+				max-width: 100%;
+			}
+			.hero-reverse {
+				flex-direction: column;
+				align-items: center;
+    		}
+    		.hero-reverse > div:first-child {
+				order: 2;
+			}
+    		.hero-reverse > div:last-child {
+				order: 1;
+			}
+			.card {
+        width: 100%; /* Set width to 100% for mobile view */
+        float: none; /* Remove float for mobile view */
+    		}
+        }
+
+        @media screen and (max-width:576px) {
+            header {
+                flex-direction: column;
+                padding: 0;
+            }
+            header .logo h2 {
+                font-size: 1.6em;
+            }
+            header .logo {
+                padding: 10px 0px;
+            }
+            header .navs {
+                width: 100%;
+                background-color: #333;
+                display: flex;
+                justify-content: center;
+                padding: 5px 0px;
+            }
+            header .navs ul li .main-active {
+                display: none;
+            }
+            header .navs ul li .responsive-active {
+                display: initial;
+            }
+            header .navs ul li a {
+                font-weight: 700;
+            }
+        }
+
+        @media screen and (max-width:425px) {
+            .term .term_content {
+                width: 100% !important;
+            }
+            .privacy .privacy_content {
+                width: 100% !important;
+            }
+        }
+		
+		
+        /* Responsive Css End */
+    </style>
+</head>
+<body>
+    <!-- header section start -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><h2><span><i class="" aria-hidden="true"></i></span> Nak Sopheak</h2></a>
+        </div>
+        <div class="navs">
+            <ul>
+                <li><a href="background.html" class="main-active">Background</a></li>
+                <li><a href="about-me.html">About</a></li>
+                <li><a href="skillset.html">Skillset</a></li>
+                <li><a href="projects-portfolio.html">Projects</a></li>
+                <li><a href="mailto:me@naksopheak.com?subject=Let's%20get%20connected!" class="main-active">Get In Touch</a></li>
+                <li><a href="mailto:me@naksopheak.com?subject=Let's%20get%20connected!" class="responsive-active">Get In Touch</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- header section end -->
+	
+<!-- Hero Section -->
+
+<!-- Hero Section end-->
+
+	        <div class="article">
+       <div class="content-article">
+            <div>
+				
+                <h1 style="text-align: center; margin-top: 25px;">
+                    <span style="color: rgb(0, 0, 0); font-size: 30px;">
+                        Terms
+                    </span>
+                </h1>
+				
+				<div>			
+					<div>
+						<p style="line-height: 1; display: inline-block;">
+							<strong></strong><em><em class="date-container"><div id="date"></div></em></em>
+						</p>
+					</div>
+					
+	    <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        Last updated: January 25, 2024
+    </p>
+    <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        Please read these terms and conditions carefully before using Our Service.
+    </p>
+
+ 
+
+    <h3 style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        <strong>Interpretation</strong>
+    </h3>
+    <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+    </p>
+
+    <h3 style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        <strong>Definitions</strong>
+    </h3>
+    <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        For the purposes of these Terms and Conditions:
+    </p>
+    <ul>
+        <li>
+            <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+                <strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
+            </p>
+        </li>
+        <li>
+            <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+                <strong>Country</strong> refers to: California, United States
+            </p>
+        </li>
+        <li>
+            <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+                <strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Nak Sopheak.
+            </p>
+        </li>
+        <li>
+            <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+                <strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.
+            </p>
+        </li>
+        <li>
+            <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+                <strong>Service</strong> refers to the Website.
+            </p>
+        </li>
+        <li>
+            <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+                <strong>Terms and Conditions</strong> (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service.
+            </p>
+        </li>
+        <li>
+            <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+                <strong>Third-party Social Media Service</strong> means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
+            </p>
+        </li>
+        <li>
+            <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+                <strong>Website</strong> refers to Nak Sopheak, accessible from <a href="http://naksopheak.com" rel="external nofollow noopener" target="_blank">naksopheak.com</a>
+            </p>
+        </li>
+        <li>
+            <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+                <strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
+            </p>
+        </li>
+    </ul>
+
+    <h2 style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        <strong>Acknowledgment</strong>
+    </h2>
+    <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        These are the Terms and Conditions governing the use of this Service and the agreement that operates between You and the Company. These Terms and Conditions set out the rights and obligations of all users regarding the use of the Service.
+    </p>
+    <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        Your access to and use of the Service is conditioned on Your acceptance of and compliance with these Terms and Conditions. These Terms and Conditions apply to all visitors, users and others who access or use the Service.
+    </p>
+    <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        By accessing or using the Service You agree to be bound by these Terms and Conditions. If You disagree with any part of these Terms and Conditions then You may not access the Service.
+    </p>
+    <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        You represent that you are over the age of 18. The Company does not permit those under 18 to use the Service.
+    </p>
+    <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        Your access to and use of the Service is also conditioned on Your acceptance of and compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your personal information when You use the Application or the Website and tells You about Your privacy rights and how the law protects You. Please read Our Privacy Policy carefully before using Our Service.
+    </p>
+
+    <h2 style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        <strong>Links to Other Websites</strong>
+    </h2>
+    <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        Our Service may contain links to third-party web sites or services that are not owned or controlled by the Company.
+    </p>
+    <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        The Company has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that the Company shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such web sites or services.
+    </p>
+    <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        We strongly advise You to read the terms and conditions and privacy policies of any third-party web sites or services that You visit.
+    </p>
+
+    <h2 style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        <strong>Termination</strong>
+    </h2>
+    <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        We may terminate or suspend Your access immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You breach these Terms and Conditions.
+    </p>
+    <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        Upon termination, Your right to use the Service will cease immediately.
+    </p>
+
+    <h2 style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        <strong>Limitation of Liability</strong>
+    </h2>
+    <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        To the maximum extent permitted by applicable law, the Company shall not be liable for any indirect, incidental, special, consequential or punitive damages, or any loss of profits or other damages, whether in an action in contract, negligence or other tortious action, arising from your use of the Service or any other matter relating to the Service.
+    </p>
+
+    <h2 style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        <strong>Disclaimer</strong>
+    </h2>
+    <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        Your use of the Service is at your sole risk. The Service is provided on an "AS IS" and "AS AVAILABLE" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, the implied warranties of merchantability, fitness for a particular purpose, or non-infringement.
+    </p>
+
+    <h2 style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        <strong>Governing Law</strong>
+    </h2>
+    <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        These Terms and Conditions shall be governed and construed in accordance with the laws of the State of California, United States, without regard to its conflict of law principles.
+    </p>
+
+    <h2 style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        <strong>Changes to These Terms and Conditions</strong>
+    </h2>
+    <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        We reserve the right, at Our sole discretion, to modify or replace these Terms and Conditions at any time. If a revision is material, We will try to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at Our sole discretion.
+    </p>
+    <p style="text-align: left; line-height: 1.5; padding: 5px 0px">
+        By continuing to access or use Our Service after those revisions become effective, You agree to be bound by the revised terms. If You do not agree to the new terms, in whole or in part, please stop using the website and the Service.
+    </p>
+					
+					
+				</div>
+				
+				
+				
+
+
+		
+				
+									
+            </div>
+            
+        </div>
+		
+		
+    </div>
+	
+<!-- Get in touch -->
+
+	
+<!-- Get in touch end -->
+	
+	
+	<footer>
+		<div class="logo">
+            <a href="index.html" style="color: white;"><h2><span><i class="" aria-hidden="true"></i></span> Nak Sopheak</h2></a>
+        </div>
+		<div class="footerinfo">
+        <!-- Footer content -->
+        <p>&copy; 2024 Nak Sopheak. All rights reserved.</p>
+		<p style="padding: 10px 25px;">
+			<a href="index.html" style="text-decoration: none; color: inherit;">Me</a> | 
+			<a href="privacy.html" style="text-decoration: none; color: inherit;">Privacy Policy</a> | 
+			<a href="terms.html" style="text-decoration: none; color: inherit;">Terms &amp; Conditions</a> | 
+			<a href="disclaimer.html" style="text-decoration: none; color: inherit;">Disclaimer</a> | 
+			<a href="mailto:me@naksopheak.com?subject=Let's%20get%20connected!" style="text-decoration: none; color: inherit;">Let's Get Connected</a>
+		</p>
+
+		</div>
+	</footer>
+	
+	<!-- animation js link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>AOS.init();</script>
+	<!-- animation js link end -->
+	
+	
+</body>
+</html>
